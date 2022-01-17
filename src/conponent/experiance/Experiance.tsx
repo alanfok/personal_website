@@ -17,9 +17,9 @@ const Experiance = () => {
         <h1>This is the Experiance Section</h1>
         <div className={classes.root}>
           <div>
-            <ExperianceCard>This is the first Experiance</ExperianceCard>
-            <ExperianceCard>This is the second Experiance</ExperianceCard>
-            <ExperianceCard>This is the third Experiance</ExperianceCard>
+            <ExperianceCard title='CompanyName'>This is the first Experiance</ExperianceCard>
+            <ExperianceCard title='CompanyName'>This is the second Experiance</ExperianceCard>
+            <ExperianceCard title='CompanyName'>This is the third Experiance</ExperianceCard>
           </div>
         </div>
     </div>)

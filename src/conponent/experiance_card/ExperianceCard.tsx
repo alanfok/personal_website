@@ -2,6 +2,7 @@ import React from 'react'
 import { makeStyles } from '@mui/styles';
 
 interface Props  {
+    title: string,
     children: React.ReactNode;
 }
 
@@ -9,7 +10,12 @@ const useStyles = makeStyles({
     root: {
       backgroundColor: 'red !important',
       marginBottom : '10px',
-      width: '500px'
+      width: '500px',
+      borderRadius: '20px'
+      
+    },
+    header:{
+      paddingTop: "3px"
     }
   });
 
@@ -17,6 +23,7 @@ const useStyles = makeStyles({
 const ExperianceCard = (props: Props)=>{
     const classes = useStyles();
     return (<div className={classes.root}> 
+        <h3 className={classes.header}>{props.title}</h3>
         { props.children  }
     </div>)
 }
