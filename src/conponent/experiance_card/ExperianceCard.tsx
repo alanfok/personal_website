@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles';
+import { padding } from '@mui/system';
 
 interface Props  {
     title: string,
@@ -11,8 +12,8 @@ const useStyles = makeStyles({
       backgroundColor: 'red !important',
       marginBottom : '10px',
       width: '500px',
-      borderRadius: '20px'
-      
+      borderRadius: '20px',
+      paddingBottom: '2px'
     },
     header:{
       paddingTop: "3px"
