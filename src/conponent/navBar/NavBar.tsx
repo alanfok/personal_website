@@ -2,11 +2,16 @@ import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import { Toolbar ,Typography , Button, IconButton, Box} from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { GrLinkedinOption } from 'react-icons/gr';
 
-
+enum Type {
+  Linkedin,
+  GitHub
+}
+//    background: #343a40;
 const useStyles = makeStyles({
     root: {
-      backgroundColor: 'black !important'
+      backgroundColor: '#343a40 !important'
     },
     leftBox: {
       marginLeft : 'auto',
@@ -35,18 +40,24 @@ const NavBar = () =>{
                     News2
                 </Typography>
               <Box className= {classes.leftBox}>
-                  <Button variant="contained" color="success" onClick={()=> handleClickFirstButton()}>Frist</Button>
+                  <Button variant="contained" color="success" onClick={()=> handleClick(Type.GitHub)}>Frist</Button>
                   <span>&nbsp;</span>
-                  <Button variant="contained" color="success" onClick={()=> handleClickFirstButton()}>Secondary</Button>
+                  <Button variant="contained" color="success" onClick={()=> handleClick(Type.Linkedin)}><GrLinkedinOption style={{fontSize:'x-large' , color: 'skyblue'}}/></Button>
              </Box>
              </Toolbar>
         </AppBar>
     //<h1>This is a navBar </h1>);
     )
 }
-
-const handleClickFirstButton = () => {
-  alert("hellow, this is the first button")
+// style={{ fontSize : 'xx-large' }}
+const handleClick = (type : Type) => {
+  if( type === Type.Linkedin ){
+    //alert("direct to linkedin");
+    window.open('http://linkedin.com/in/fok-poon-kai-alan-850417151', '_blank');
+  }
+  else {
+    alert("hellow, this is the first button")
+  }
 };
 
 
