@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './conponent/navBar/NavBar';
-import Experiance from './conponent/experiance/Experiance';
-import Skill from './conponent/skill/Skill';
-import Contact from './conponent/contact/Contact';
-import AboutMe from './conponent/aboutMe/AboutME';
+import NavBar from './component/navBar/NavBar';
+import Experience from './component/experience/Experience';
+import Skill from './component/skill/Skill';
+import Contact from './component/contact/Contact';
+import AboutMe from './component/aboutMe/AboutMe';
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      <Experiance></Experiance>
+      <Experience></Experience>
       <Skill></Skill>
       <AboutMe></AboutMe>
       <Contact></Contact>
