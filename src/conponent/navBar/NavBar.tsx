@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import { Toolbar ,Typography , Button, IconButton, Box} from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { GrLinkedinOption } from 'react-icons/gr';
+import { GrLinkedinOption, GrGithub } from 'react-icons/gr';
 
 enum Type {
   Linkedin,
@@ -40,7 +40,7 @@ const NavBar = () =>{
                     News2
                 </Typography>
               <Box className= {classes.leftBox}>
-                  <Button variant="contained" color="success" onClick={()=> handleClick(Type.GitHub)}>Frist</Button>
+                  <Button variant="contained" color="success" onClick={()=> handleClick(Type.GitHub)}><GrGithub  style={{fontSize:'x-large'}}/></Button>
                   <span>&nbsp;</span>
                   <Button variant="contained" color="success" onClick={()=> handleClick(Type.Linkedin)}><GrLinkedinOption style={{fontSize:'x-large' , color: 'skyblue'}}/></Button>
              </Box>
