@@ -6,15 +6,27 @@ import Experience from './component/experience/Experience';
 import Skill from './component/skill/Skill';
 import Contact from './component/contact/Contact';
 import AboutMe from './component/aboutMe/AboutMe';
+import { Routes, Route, Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Grid } from '@mui/material';
 
 function App() {
+  AOS.init();
   return (
     <div className="App">
       <NavBar></NavBar>
-      <Experience></Experience>
-      <Skill></Skill>
-      <AboutMe></AboutMe>
-      <Contact></Contact>
+      <Grid container spacing={0}>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={8}>
+          <Experience></Experience>
+          <Skill></Skill>
+          <AboutMe></AboutMe>
+          <Contact></Contact>
+        </Grid>
+        <Grid item xs={2}></Grid>
+      </Grid>
+      <div data-aos="fade-left">fff</div>
     </div>
   );
 }

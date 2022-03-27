@@ -1,10 +1,12 @@
 import React from 'react';
 import Description from './Description';
+import { Grid } from '@mui/material';
 
 export default function AboutMe() {
   return (
     <>
-      <h1>This is about me</h1>
+      <hr style={{ width: '80%' }}></hr>
+      <h1>About me</h1>
       <Description
         name={
           <>

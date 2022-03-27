@@ -1,5 +1,7 @@
 import React from 'react';
+import AOS from 'aos';
 import ExperienceCard from '../experienceCard/ExperienceCard';
+
 
 import { makeStyles } from '@mui/styles';
 
@@ -10,26 +12,26 @@ const useStyles = makeStyles({
   },
 });
 
+AOS.init();
 const Experience = () => {
   const classes = useStyles();
   return (
-    <div>
+    <>
       <h1>This is the Experiance Section</h1>
       <div className={classes.root}>
         <div>
-          ß
-          <ExperienceCard title="CompanyName">
+          <ExperienceCard title="CIM MAINTENANCE, Brossard, QC">
             This is the first Experiance
           </ExperienceCard>
-          <ExperienceCard title="CompanyName">
+          <ExperienceCard title="AHEEVA, Montreal, QC">
             This is the second Experiance
           </ExperienceCard>
-          <ExperienceCard title="CompanyName">
+          <ExperienceCard title="CAE Inc, Montreal, QC">
             This is the third Experiance
           </ExperienceCard>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

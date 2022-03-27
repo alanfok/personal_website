@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const ExperienceCard = (props: Props) => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div data-aos="fade-left" className={classes.root}>
       <h3 className={classes.header}>{props.title}</h3>
       {props.children}
     </div>
