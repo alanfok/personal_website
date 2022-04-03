@@ -8,6 +8,7 @@ import { GrLinkedinOption, GrGithub } from 'react-icons/gr';
 const useStyles = makeStyles({
   root: {
     backgroundColor: '#343a40 !important',
+    width: '100%',
   },
   leftBox: {
     marginLeft: 'auto',

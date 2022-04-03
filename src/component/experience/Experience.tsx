@@ -2,13 +2,14 @@ import React from 'react';
 import AOS from 'aos';
 import ExperienceCard from '../experienceCard/ExperienceCard';
 
-
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
   root: {
     display: 'flex',
     justifyContent: 'center',
+    alignContent: 'center',
+    flexWrap: 'wrap',
   },
 });
 
@@ -19,7 +20,7 @@ const Experience = () => {
     <>
       <h1>This is the Experiance Section</h1>
       <div className={classes.root}>
-        <div>
+        <>
           <ExperienceCard title="CIM MAINTENANCE, Brossard, QC">
             This is the first Experiance
           </ExperienceCard>
@@ -29,7 +30,7 @@ const Experience = () => {
           <ExperienceCard title="CAE Inc, Montreal, QC">
             This is the third Experiance
           </ExperienceCard>
-        </div>
+        </>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
-import { SiJava, SiJavascript, SiReact } from 'react-icons/si';
+import { SiJava, SiJavascript, SiReact, SiSpringboot } from 'react-icons/si';
+import { FaDatabase } from 'react-icons/fa';
 import { Grid } from '@mui/material';
 
 const Skill = () => {
@@ -11,9 +12,22 @@ const Skill = () => {
       <h1>Skill</h1>
       <br></br>
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <SiJava style={{ fontSize: '75px' }}></SiJava>
-        <SiJavascript style={{ fontSize: '75px' }}></SiJavascript>
-        <SiReact style={{ fontSize: '75px' }}></SiReact>
+        <div>
+          <SiJava style={{ fontSize: '75px' }}></SiJava>
+          <p>java</p>
+        </div>
+        <div>
+          <SiJavascript style={{ fontSize: '75px' }}></SiJavascript>
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <SiReact style={{ fontSize: '75px' }}></SiReact>
+          <p>react</p>
+        </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <FaDatabase style={{ fontSize: '75px' }}></FaDatabase>
+        <SiSpringboot style={{ fontSize: '75px' }}></SiSpringboot>
       </div>
     </>
   );

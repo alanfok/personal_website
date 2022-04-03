@@ -9,9 +9,9 @@ interface Props {
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: 'red !important',
+    //backgroundColor: 'red !important',
     marginBottom: '10px',
-    width: '500px',
+    width: '70%',
     borderRadius: '20px',
     paddingBottom: '2px',
   },
