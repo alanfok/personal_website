@@ -25,9 +25,15 @@ const Skill = () => {
           <p>react</p>
         </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <FaDatabase style={{ fontSize: '75px' }}></FaDatabase>
-        <SiSpringboot style={{ fontSize: '75px' }}></SiSpringboot>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+        <div>
+          <FaDatabase style={{ fontSize: '75px' }}></FaDatabase>
+          <p>SQL</p>
+        </div>
+        <div>
+          <SiSpringboot style={{ fontSize: '75px' }}></SiSpringboot>
+          <p>Spring Boot</p>
+        </div>
       </div>
     </>
   );

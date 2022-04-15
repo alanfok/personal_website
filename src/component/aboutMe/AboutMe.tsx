@@ -1,12 +1,16 @@
 import React from 'react';
 import Description from './Description';
 import { Grid } from '@mui/material';
+import photo from '../../photo/p_photo.jpeg';
 
 export default function AboutMe() {
   return (
     <>
       <hr style={{ width: '80%' }}></hr>
       <h1>About me</h1>
+
+      <img src={photo} style={{ width: '10%', borderRadius: '90%' }}></img>
+
       <Description
         name={
           <>
